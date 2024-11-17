@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "buildOptimizer": true,
-            "sourceMap": false,
+            "sourceMap": true,
             "outputPath": "dist/expense-tracker",
             "index": "src/index.html",
             "main": "src/main.ts",
