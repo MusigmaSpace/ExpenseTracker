@@ -1,0 +1,129 @@
+/* Global Styles */
+body {
+    background-color: #f4f6f9; /* Light background for the whole page */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Dashboard Title */
+  .dashboard-title {
+    color: #4caf50; /* Green for the title */
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Styles */
+  .table {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .table th {
+    background-color: #007bff; /* Blue for headers */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .table tbody tr {
+    background-color: #f9f9f9;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Button Styles */
+  button {
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  button.btn-primary {
+    background-color: #4caf50; /* Green */
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #388e3c; /* Darker Green */
+  }
+  
+  button.btn-danger {
+    background-color: #f44336; /* Red */
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-danger:hover {
+    background-color: #d32f2f; /* Darker Red */
+  }
+  
+  /* Mobile View Adjustment */
+  @media (max-width: 576px) {
+    .table thead {
+      font-size: 14px;
+    }
+  
+    .table tbody td {
+      font-size: 12px;
+    }
+  
+    .dashboard-title {
+      font-size: 28px;
+    }
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .dashboard-title {
+    color: #4CAF50;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #e0f7fa;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border: none;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  

@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Expense } from '../models/expense.model';  // Import your model if you have one
+import { Expense } from '../models/expense.model'; 
 
 @Injectable({
   providedIn: 'root',
 })
 export class ExpenseService {
   private apiUrl = 'http://localhost:3000/expenses';
+  private userApiUrl = 'http://localhost:3000/users'
 
   constructor(private http: HttpClient) {}
 
@@ -28,11 +29,15 @@ export class ExpenseService {
 
   // Update an existing expense
   updateExpense(expense: Expense): Observable<Expense> {
-    return this.http.put<Expense>(`${this.apiUrl}/${expense.id}`, expense);
+    return this.http.put<Expense>(`${this.apiUrl}/${expense}`, expense);
   }
 
   // Optionally, delete an expense by ID
   deleteExpense(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`);
+  }
+
+  registerUser(user: any): Observable<any> {
+    return this.http.post<any>(this.userApiUrl, user);
   }
 }

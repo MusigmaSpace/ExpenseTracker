@@ -2,7 +2,7 @@
   "name": "expense-tracker",
   "version": "0.0.0",
   "proxy": "http://localhost:3000/",
-    "scripts": {
+  "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
