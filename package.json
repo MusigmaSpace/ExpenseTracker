@@ -20,6 +20,8 @@
     "@angular/platform-browser": "^18.2.12",
     "@angular/platform-browser-dynamic": "^18.2.12",
     "@angular/router": "^18.2.12",
+    "babel-loader": "^9.2.1",
+    "browserslist": "^4.24.2",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
     "zone.js": "~0.14.10"
